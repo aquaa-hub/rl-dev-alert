@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
       - name: Lancer le détecteur
         run: python dev_alert.py
         env:
